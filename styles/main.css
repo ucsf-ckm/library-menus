@@ -3452,7 +3452,8 @@ h1.page-title {
 }
 
 #sidebar-right {
-  float: right;
+  position: absolute;
+  right: 20px;
   width: 206px;
 }
 
@@ -4704,6 +4705,10 @@ h3 .panel-region-separator {
 
 .one-sidebars #content .content-area {
   margin-left: 20px;
+}
+
+div.ucsf-library-panel.panel-display.one-sidebars {
+  width: 700px;
 }
 
 .no-left-col .header-area {
