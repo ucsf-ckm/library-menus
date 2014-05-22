@@ -3451,6 +3451,11 @@ h1.page-title {
   width: 206px;
 }
 
+#sidebar-right {
+  float: right;
+  width: 206px;
+}
+
 body.sidebar-left .content-area,body.sidebar-right .content-area {
   width: 695px;
   float: left;
