@@ -1650,7 +1650,7 @@ div.view:hover div.views-hide {
 }
 
 #main-wrapper h1.title {
-  display: none;
+  display: block;
 }
 
 .panel-1col {
