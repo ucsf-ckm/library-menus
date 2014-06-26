@@ -4706,7 +4706,7 @@ h3 .panel-region-separator {
   margin-left: 20px;
 }
 
-div.ucsf-library-panel.panel-display.one-sidebars {
+.full-width-minus-one-sidebar {
   width: 700px;
 }
 
