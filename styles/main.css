@@ -4692,6 +4692,7 @@ div.content-profile-display {
 
 .panel-region-separator {
   border-bottom: 1px solid #ccc;
+  line-height: 0;
 }
 
 h3 .panel-region-separator {
