@@ -493,10 +493,10 @@ if (! window.location.search.match(/ovrrdr/)) {
       autoArrows: false,
       // Disable drop shadows.
       dropShadows: false,
-      // Mouse delay.
-      delay: Drupal.settings.nice_menus_options.delay,
+      // Delay before menus go away after hover ends
+      delay: 600,
       // Animation speed.
-      speed: Drupal.settings.nice_menus_options.speed
+      speed: -999
     // Add in Brandon Aaronâ€™s bgIframe plugin for IE select issues.
     // http://plugins.jquery.com/node/46/release
     }).find('ul').bgIframe({opacity:false});
