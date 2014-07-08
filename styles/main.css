@@ -2966,6 +2966,10 @@ ul.nice-menu li {
   font-weight: bold;
 }
 
+#nice-menu-0 li ul li a {
+  font-weight: normal;
+}
+
 #nice-menu-0 li a span {
   padding: 3px 22px 3px 0;
   display: block;
