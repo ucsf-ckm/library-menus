@@ -3401,19 +3401,27 @@ img.logo {
   margin-bottom: 3px;
 }
 
-#search-bar a {
-  color: #fff;
-  font-weight: normal;
-  text-decoration: underline;
-}
-
-#search-bar a:hover {
-  text-decoration: none;
-}
-
 #search-bar h2.title {
   margin: 0;
   display: none;
+}
+
+#search-bar .extra-links {
+  text-align: right;
+  margin: 0 38px 0 0;
+  padding: 0;
+  line-height: 1em;
+}
+
+#search-bar .extra-links li {
+  display: inline-block;
+  padding-left: 1em;
+}
+
+.extra-links li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 h1.page-title {
