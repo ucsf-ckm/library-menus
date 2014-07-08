@@ -2943,12 +2943,12 @@ ul.nice-menu li {
 #nice-menu-0 {
   position: static;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 #nice-menu-0 li {
   float: left;
-  margin: 0 4px;
+  margin: 0 8px 0 0;
   padding: 0;
   list-style-type: none;
   list-style-image: none;
@@ -2960,25 +2960,25 @@ ul.nice-menu li {
 #nice-menu-0 li a {
   margin: 0;
   display: block;
-  color: #fff;
+  color: #3189BF;
   text-transform: uppercase;
-  font-size: 12px;
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/primary-menu-item-bg-right.gif) no-repeat right top;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 #nice-menu-0 li a span {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/primary-menu-item-bg-left.gif) no-repeat left top;
-  padding: 3px 11px;
+  padding: 3px 22px 3px 0;
   display: block;
   line-height: 18px;
 }
 
 #nice-menu-0 li a:hover span,#nice-menu-0 li a:focus span,#nice-menu-0 li a.active span {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/primary-menu-item-bg-left-hover.gif) no-repeat left top;
+  /*background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/primary-menu-item-bg-left-hover.gif) no-repeat left top;*/
+  color: #AD4200;
 }
 
 #nice-menu-0 li a:hover,#nice-menu-0 li a:focus,#nice-menu-0 li a.active {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/primary-menu-item-bg-right-hover.gif) no-repeat right top;
+  /*background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/primary-menu-item-bg-right-hover.gif) no-repeat right top;*/
 }
 
 #nice-menu-0 > li.active-trail > a > span {
@@ -2993,9 +2993,6 @@ ul.nice-menu li {
 #nice-menu-0 li a:hover,#nice-menu-0 li a:focus,#nice-menu-0 li a.active {
   color: #1e7cb2;
   text-decoration: none;
-}
-
-#nice-menu-0 .last a {
 }
 
 #nice-menu-0 li ul {
@@ -3351,18 +3348,25 @@ html,body {
 
 #header,#header-menu-wrapper {
   width: 943px;
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/header-bg.png) no-repeat left top;
-  height: 97px;
+  height: 68px;
+  background-color: #3189BF;
+  border-radius: 0.5em;
 }
 
 #header,#header-menu-wrapper h1 {
-  margin: 0;
+  margin: 0 0 5px 0;
   float: left;
   padding: 0;
 }
 
+#header, #header-menu-wrapper, #search-bar {
+  border-radius: 0.5em;
+}
+
 img.logo {
-  padding: 10px 0 0 10px;
+  height: 48px;
+  padding: 0 0 0 10px;
+  margin: 10px 0;
 }
 
 .logo {
@@ -4742,6 +4746,10 @@ h3 .panel-region-separator {
   float: right;
 }
 
+#navigation {
+  padding-left: 17px;
+}
+
 #navigation .menuparent span:after {
   padding-left: 5px;
   vertical-align: middle;
@@ -4750,11 +4758,6 @@ h3 .panel-region-separator {
 
 #navigation .menuparent span:hover:after,#navigation .menuparent a:focus span:after,#navigation .menuparent.active-trail span:after {
   content: url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/images/12x12_openarrow_blue2.png);
-}
-
-#navigation {
-  float: right;
-  margin-right: 15px;
 }
 
 #webform-client-form-53 .webform-component .form-item .description {

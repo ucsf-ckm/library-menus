@@ -26,8 +26,29 @@
             <li class="first"><a href="https://ucsf.idm.oclc.org/login?url=http://www.ncbi.nlm.nih.gov/pubmed?tool=cdl&amp;otool=cdlotool" title="PUBMED@UCSF">PubMed@UCSF</a></li>
             <li class="last"><a href="/askus" title="Ask Us">Ask Us</a></li>
           </ul><!-- SECONDARY LINKS -->
+        </div>
+      </div> <!-- /.section, /#header -->
 
-          <div id="navigation">
+      <div id="search-bar" class="clear-block">
+        <div class="block block-ucsf_quicksearch" id="block-ucsf_quicksearch-ucsf_quicksearch_block">
+          <div class="block-inner">
+            <div class="content">
+              <form action="/quicksearch"  accept-charset="UTF-8" method="post" id="ucsf-quicksearch-form">
+                <div><label for="edit-quicksearch-keywords">QUICKSEARCH</label>
+                  <div class="form-item" id="edit-quicksearch-keywords-wrapper">
+                    <input type="text" maxlength="128" name="quicksearch_keywords" id="edit-quicksearch-keywords"  size="25" value="" class="form-text" />
+                  </div>
+                  <input type="submit" name="op" id="edit-submit" value="Go"  class="form-submit" />
+                  <input type="hidden" name="form_id" id="edit-ucsf-quicksearch-form" value="ucsf_quicksearch_form"  />
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="navigation">
             <div class="section clearfix">
 
               <!-- begin menus.html in templates/includes in our drupal theme -->
@@ -79,27 +100,6 @@
 
             </div>
           </div>
-        </div>
-      </div> <!-- /.section, /#header -->
-
-      <div id="search-bar" class="clear-block">
-        <div class="block block-ucsf_quicksearch" id="block-ucsf_quicksearch-ucsf_quicksearch_block">
-          <div class="block-inner">
-            <div class="content">
-              <form action="/quicksearch"  accept-charset="UTF-8" method="post" id="ucsf-quicksearch-form">
-                <div><label for="edit-quicksearch-keywords">QUICKSEARCH</label>
-                  <div class="form-item" id="edit-quicksearch-keywords-wrapper">
-                    <input type="text" maxlength="128" name="quicksearch_keywords" id="edit-quicksearch-keywords"  size="25" value="" class="form-text" />
-                  </div>
-                  <input type="submit" name="op" id="edit-submit" value="Go"  class="form-submit" />
-                  <input type="hidden" name="form_id" id="edit-ucsf-quicksearch-form" value="ucsf_quicksearch_form"  />
-
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div id="main-wrapper">
 
