@@ -3408,29 +3408,50 @@ img.logo {
   display: none;
 }
 
-div.extra-links {
+div.extra-info {
   width: 943px;
+  height: 28px;
   background-color: #2B85BB;
   border-radius: 0.5em;
   margin-bottom: -10px;
+  color: #fff;
 }
 
-.extra-links ul {
-  text-align: right;
-  margin: 0 38px 0 0;
+.extra-info ul.extra-links {
+  float: right;
   padding: 0;
+  line-height: 1em;
+  display: inline-block;
+}
+
+.extra-info ul.extra-links li {
+  padding: 0 20px 0 0;
+  display: inline-block;
+}
+
+.extra-info ul li a {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
+}
+
+.hours {
   line-height: 1em;
 }
 
-div.extra-links ul li {
-  display: inline-block;
-  padding: 0 20px 0 0;
+.hours span {
+  padding: 4px 20px 0 0;
+  float: left;
 }
 
-.extra-links ul li a {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: normal;
+.hours ul {
+  display: inline-block;
+}
+
+.extra-info .hours, .extra-info .hours ul li {
+  display: inline-block;
+  padding: 0 20px 0 0;
+  margin: 0;
 }
 
 h1.page-title {
