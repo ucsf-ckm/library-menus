@@ -2941,14 +2941,13 @@ ul.nice-menu li {
 }
 
 #nice-menu-0 {
-  position: static;
-  text-align: left;
-  margin-top: 0;
+  margin-top: 34px;
+  float: right;
 }
 
 #nice-menu-0 li {
   float: left;
-  margin: 0 8px 0 0;
+  margin: 0;
   padding: 0;
   list-style-type: none;
   list-style-image: none;
@@ -2960,7 +2959,7 @@ ul.nice-menu li {
 #nice-menu-0 li a {
   margin: 0;
   display: block;
-  color: #3189BF;
+  color: #2B85BB;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
@@ -2971,7 +2970,7 @@ ul.nice-menu li {
 }
 
 #nice-menu-0 li a span {
-  padding: 3px 22px 3px 0;
+  padding: 3px 20px 3px 0;
   display: block;
   line-height: 18px;
 }
@@ -3353,7 +3352,6 @@ html,body {
 #header,#header-menu-wrapper {
   width: 943px;
   height: 68px;
-  background-color: #3189BF;
   border-radius: 0.5em;
 }
 
@@ -3410,19 +3408,26 @@ img.logo {
   display: none;
 }
 
-#search-bar .extra-links {
+div.extra-links {
+  width: 943px;
+  background-color: #2B85BB;
+  border-radius: 0.5em;
+  margin-bottom: -10px;
+}
+
+.extra-links ul {
   text-align: right;
   margin: 0 38px 0 0;
   padding: 0;
   line-height: 1em;
 }
 
-#search-bar .extra-links li {
+div.extra-links ul li {
   display: inline-block;
-  padding-left: 1em;
+  padding: 0 20px 0 0;
 }
 
-.extra-links li a {
+.extra-links ul li a {
   color: #fff;
   text-transform: uppercase;
   font-weight: normal;
