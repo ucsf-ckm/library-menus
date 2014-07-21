@@ -2941,7 +2941,7 @@ ul.nice-menu li {
 }
 
 #nice-menu-0 {
-  margin-top: 34px;
+  margin-top: 39px;
   float: right;
 }
 
@@ -3368,7 +3368,7 @@ html,body {
 img.logo {
   height: 48px;
   padding: 0 0 0 10px;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .logo {
@@ -3410,10 +3410,10 @@ img.logo {
 
 div.extra-info {
   width: 943px;
-  height: 28px;
+  height: 30px;
   background-color: #2B85BB;
   border-radius: 0.5em;
-  margin-bottom: -10px;
+  margin-bottom: -12px;
   color: #fff;
 }
 
