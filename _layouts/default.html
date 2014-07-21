@@ -80,12 +80,9 @@
         <div class="block extra-info">
           <div class="block-inner">
             <div class="content">
-              <div class="hours">
+              <div class="hours" id="header-hours">
                 <span>Today:</span>
                 <ul>
-                  <li>MB Library: 9am to 9pm</li>
-                  <li>Parnassus: 7am to 10pm</li>
-                  <li><a href="/locations/hours">[clock] HOURS</a></li>
                 </ul>
               </div>
               <ul class="extra-links">
@@ -147,7 +144,7 @@
   <script>
   (function ($) {
     if ($('#api_hours_today_iid138_lid0').length) {
-      Drupal.behaviors.ucsfLibraryHours = function(context) {
+      Drupal.behaviors.ucsfLibraryHoursPane = function(context) {
         var externalScript = $('<script>').attr('src', 'https://api.libcal.com/api_hours_today.php?iid=138&lid=0&format=js&context=object');
         $('body').append(externalScript);
       }
@@ -155,62 +152,99 @@
   }(jQuery));
   </script>
   <script type="text/javascript">
-  (function () {
-    Drupal.behaviors.ucsfLibraryOfNote = function(context) {
-            // Hide pane in case apis.ucsf.edu is down or IE8 is weird
-            var pane = document.getElementById('featured-guide-pane');
-            if (pane) {
-              pane.setAttribute('style', 'visibility:hidden');
-            }
-            var script = document.createElement('script');
-            script.src = 'https://apis.ucsf.edu/jsapi?library';
-            document.body.appendChild(script);
+    (function () {
+      Drupal.behaviors.loadUcsfApi = function () {
+        var script = document.createElement('script');
+        script.src = 'https://apis.ucsf.edu/jsapi?library';
+        document.body.appendChild(script);
+      };
 
-            var getGuides = function () {
-              var failure = function () {
-              };
+      Drupal.behaviors.ucsfLibraryHours = function() {
+        var getHours = function () {
+          var failure = function () {
+          };
 
-              var success = function (result) {
-                var guides = result.guides;
-                if (guides) {
-                  var randomGuideIndex = Math.floor(Math.random() * guides.length);
-                  var randomGuide = guides[randomGuideIndex];
-                  if (randomGuide) {
-                    var guides_results = document.getElementById('featured-guide');
-                    if (guides_results) {
-                      var textContent;
-                      if ("textContent" in guides_results) {
-                        textContent = "textContent";
-                      } else {
-                        textContent = "innerText";
-                      }
-                      var a = document.createElement('a');
-                      a.href = randomGuide.href;
-                      a[textContent] = randomGuide.title;
-                      guides_results.appendChild(a);
-
-                      var textNode = document.createTextNode(' - ' + randomGuide.desc);
-                      guides_results.appendChild(textNode);
-                    }
-                  }
-                } else {
-                  failure();
-                }
-              };
-
-              UCSF.Library.guides({}, success, failure);
-              if (pane) {
-                pane.removeAttribute('style');
+          var success = function (result) {
+            var appendHours = function (id, label) {
+              var hours = locations[id];
+              if (hours) {
+                var hoursText = hours[0].text.replace(/[^\w\s:-]/,'');
+                $('#header-hours ul').append(
+                  $('<li>').append(label + ': ' + hoursText)
+                );
               }
-            }
+            };
 
-            if (window.addEventListener) {
-              window.addEventListener("load", getGuides, false);
-            } else if (window.attachEvent) {
-              window.attachEvent("onload", getGuides);
+            var locations = result.locations;
+            if (locations) {
+              appendHours('missionBay', 'MB Library');
+              appendHours('parnassus', 'Parnassus');
+              $('#header-hours ul').append('<li><a href="/locations/hours">[clock] HOURS</a></li>');
             }
+          };
+
+          UCSF.Library.hours({}, success, failure);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener('load', getHours, false);
+        } else if (window.attachEvent) {
+          window.attachEvent('onload', getHours);
+        }
+      };
+
+      Drupal.behaviors.ucsfLibraryOfNote = function(context) {
+        // Hide pane in case apis.ucsf.edu is down or IE8 is weird
+        var pane = document.getElementById('featured-guide-pane');
+        if (pane) {
+          pane.setAttribute('style', 'visibility:hidden');
+        }
+
+        var getGuides = function () {
+          var failure = function () {
+          };
+
+          var success = function (result) {
+            var guides = result.guides;
+            if (guides) {
+              var randomGuideIndex = Math.floor(Math.random() * guides.length);
+              var randomGuide = guides[randomGuideIndex];
+              if (randomGuide) {
+                var guides_results = document.getElementById('featured-guide');
+                if (guides_results) {
+                  var textContent;
+                  if ("textContent" in guides_results) {
+                    textContent = "textContent";
+                  } else {
+                    textContent = "innerText";
+                  }
+                  var a = document.createElement('a');
+                  a.href = randomGuide.href;
+                  a[textContent] = randomGuide.title;
+                  guides_results.appendChild(a);
+
+                  var textNode = document.createTextNode(' - ' + randomGuide.desc);
+                  guides_results.appendChild(textNode);
+                }
+              }
+            } else {
+              failure();
+            }
+          };
+
+          UCSF.Library.guides({}, success, failure);
+          if (pane) {
+            pane.removeAttribute('style');
           }
-        }());
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener("load", getGuides, false);
+        } else if (window.attachEvent) {
+          window.attachEvent("onload", getGuides);
+        }
+      };
+    }());
   </script>
 </body>
 </html>
