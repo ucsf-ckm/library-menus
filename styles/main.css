@@ -2976,12 +2976,7 @@ ul.nice-menu li {
 }
 
 #nice-menu-0 li a:hover span,#nice-menu-0 li a:focus span,#nice-menu-0 li a.active span {
-  /*background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/primary-menu-item-bg-left-hover.gif) no-repeat left top;*/
   color: #AD4200;
-}
-
-#nice-menu-0 li a:hover,#nice-menu-0 li a:focus,#nice-menu-0 li a.active {
-  /*background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/primary-menu-item-bg-right-hover.gif) no-repeat right top;*/
 }
 
 #nice-menu-0 > li.active-trail > a > span {
