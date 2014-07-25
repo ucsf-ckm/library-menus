@@ -1702,10 +1702,6 @@ body {
   margin: 0
 }
 
-.main-header {
-  height: 68px;
-}
-
 a:focus {
   outline: thin dotted
 }
@@ -3322,6 +3318,10 @@ html,body {
 
 #page-wrapper,#page {
   min-height: 100%;
+}
+
+.main-header {
+  height: 68px;
 }
 
 #search-bar {
