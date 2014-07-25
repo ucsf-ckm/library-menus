@@ -1395,9 +1395,6 @@ div.user-login-block a {
   white-space: pre-wrap;
 }
 
-
-
-
 .block-nice_menus {
   line-height: normal;
   z-index: 10;
@@ -1703,6 +1700,10 @@ html,button,input,select,textarea {
 
 body {
   margin: 0
+}
+
+header.main {
+  height: 68px;
 }
 
 a:focus {
@@ -3232,10 +3233,6 @@ h1,.page-news .middle-panel #ucsf-library-news-pane h2.title span {
   margin-top: -10px;
 }
 
-.section h1.title {
-  margin-left: 15px;
-}
-
 .middle-panel h1 {
   min-width: 350px;
 }
@@ -3327,26 +3324,13 @@ html,body {
   min-height: 100%;
 }
 
-#header,#header-menu-wrapper {
-  width: 943px;
-  height: 68px;
-  border-radius: 0.5em;
-}
-
-#header,#header-menu-wrapper h1 {
-  margin: 0 0 5px 0;
-  float: left;
-  padding: 0;
-}
-
-#header, #header-menu-wrapper, #search-bar {
+#search-bar {
   border-radius: 0.5em;
 }
 
 img.logo {
   height: 48px;
-  padding: 0 0 0 10px;
-  margin: 15px 0;
+  margin: 15px 0 0 10px;
 }
 
 .logo {
@@ -3381,18 +3365,13 @@ img.logo {
   margin-bottom: 3px;
 }
 
-#search-bar h2.title {
-  margin: 0;
-  display: none;
-}
-
 div.extra-info {
   width: 943px;
   height: 30px;
   background-color: #2B85BB;
   border-radius: 0.5em;
-  margin-bottom: -12px;
   color: #fff;
+  margin-bottom: 3px;
 }
 
 .extra-info ul.extra-links {
@@ -3406,10 +3385,11 @@ div.extra-info {
   display: inline-block;
 }
 
-.extra-info ul li a {
+div.extra-info ul li a {
   text-transform: uppercase;
   font-weight: normal;
   color: #fff;
+  padding: 2px 0;
 }
 
 .hours {
@@ -3417,7 +3397,7 @@ div.extra-info {
 }
 
 .hours span {
-  padding: 5px 20px 0 0;
+  padding: 3px 20px 0 0;
   float: left;
 }
 
@@ -3428,6 +3408,7 @@ div.extra-info {
 .extra-info .hours {
   display: inline-block;
   padding: 0 8px 0 12px;
+  min-width: 35%;
 }
 
 .extra-info .hours ul li {
