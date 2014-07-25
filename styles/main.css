@@ -3324,10 +3324,6 @@ html,body {
   height: 68px;
 }
 
-#search-bar {
-  border-radius: 0.5em;
-}
-
 img.logo {
   height: 48px;
   margin: 15px 0 0 10px;
@@ -3358,11 +3354,12 @@ img.logo {
 }
 
 #search-bar {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/search-bar-bg.png) no-repeat left top;
+  background-color: #ad4200;
   color: #fff;
   padding: 7px 0 7px 17px;
   border-bottom: 1px solid #fff;
   margin-bottom: 3px;
+  border-radius: 0.5em;
 }
 
 div.extra-info {
