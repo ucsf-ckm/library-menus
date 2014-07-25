@@ -81,7 +81,6 @@
           <div class="block-inner">
             <div class="content">
               <div class="hours" id="header-hours">
-                <span>Today:</span>
                 <ul>
                 </ul>
               </div>
@@ -177,6 +176,7 @@
 
             var locations = result.locations;
             if (locations) {
+              $('#header-hours').prepend('<span>Today:</span>')
               appendHours('missionBay', 'MB Library');
               appendHours('parnassus', 'Parnassus');
               $('#header-hours ul').append('<li><a href="/locations/hours"><img src="/hours_clock.png" alt=""> HOURS</a></li>');
