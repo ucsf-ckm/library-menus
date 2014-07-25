@@ -127,6 +127,7 @@
 
     </div>
   </div> <!-- /#page-wrapper -->
+  <script src="https://apis.ucsf.edu/jsapi?library"></script>
   <script>
   Drupal.behaviors.tableHeader = function(){};
   </script>
@@ -142,12 +143,6 @@
   </script>
   <script>
     (function () {
-      Drupal.behaviors.loadUcsfApi = function () {
-        var script = document.createElement('script');
-        script.src = 'https://apis.ucsf.edu/jsapi?library';
-        document.body.appendChild(script);
-      };
-
       Drupal.behaviors.ucsfLibraryHours = function() {
         var getHours = function () {
           var failure = function () {
