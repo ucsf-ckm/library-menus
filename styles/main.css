@@ -3362,6 +3362,11 @@ img.logo {
   border-radius: 0.5em;
 }
 
+input#edit-submit {
+  text-transform: uppercase;
+  color: #ad4200;
+}
+
 div.extra-info {
   width: 943px;
   height: 30px;
