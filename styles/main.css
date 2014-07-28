@@ -3628,25 +3628,6 @@ ul.tabs.primary {
   padding-top: 1px;
 }
 
-#search-bar #block-ucsf_quicksearch-ucsf_quicksearch_block #edit-submit {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/btn-search.gif) no-repeat left top;
-  border: 0;
-  color: #fff;
-  height: 26px;
-  width: 32px;
-  padding: 0 5px 4px 4px;
-  margin: 0 5px 0 2px;
-  font-size: 1em;
-  cursor: hand;
-  cursor: pointer;
-  text-transform: uppercase;
-  float: left;
-}
-
-#search-bar #block-ucsf_quicksearch-ucsf_quicksearch_block #edit-submit:hover {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/btn-search-hover.gif) no-repeat left top;
-}
-
 #search-bar #block-ucsf_quicksearch-ucsf_quicksearch_block .content {
   padding: 0;
   margin-top: 0;
