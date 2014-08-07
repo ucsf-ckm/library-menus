@@ -3408,7 +3408,7 @@ div.extra-info ul li a {
 }
 
 .extra-info .hours {
-  display: inline-block;
+  float: left;
   padding: 0 8px 0 12px;
   min-width: 35%;
 }
