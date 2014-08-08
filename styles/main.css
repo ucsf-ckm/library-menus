@@ -3186,7 +3186,7 @@ ul.nice-menu li {
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 100%;
   color: #333333;
   line-height: 16px;
@@ -3194,6 +3194,10 @@ body {
 
 body.mceContentBody {
   background: #FFFFFF;
+}
+
+input, button {
+  font-family: Arial, sans-serif;
 }
 
 a {
