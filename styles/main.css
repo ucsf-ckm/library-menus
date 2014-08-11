@@ -1643,6 +1643,8 @@ div.view:hover div.views-hide {
 and (max-width : 959px) {
   .panel .panel-two-thirds-column .col-right {
     clear: both;
+    float: none;
+    margin: auto;
   }
 
   .panel .panel-col-third {
@@ -3464,7 +3466,7 @@ h1.page-title {
 
 #content-area {
   margin: auto;
-  width: 910px;
+  max-width: 910px;
 }
 
 #sidebar-left {
