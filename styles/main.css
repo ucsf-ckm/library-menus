@@ -1668,7 +1668,6 @@ div.view:hover div.views-hide {
   margin: 0 0 1em 0;
 }
 
-
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
   display: block
 }
@@ -3300,7 +3299,6 @@ ul li,.item-list ul li {
 
 #page-wrapper {
   margin: 0 auto;
-  width: 943px;
   text-align: left;
   font-size: 0.75em;
   line-height: 1.333em;
@@ -3372,7 +3370,7 @@ input#edit-submit {
 }
 
 div.extra-info {
-  width: 943px;
+  width: 100%;
   height: 30px;
   background-color: #2B85BB;
   border-radius: 0.5em;
@@ -3452,8 +3450,8 @@ h1.page-title {
 }
 
 #content-area {
-  margin-left: 15px;
-  width: 910px;
+  margin: auto;
+  max-width: 910px;
 }
 
 #sidebar-left {
@@ -3614,7 +3612,6 @@ ul.tabs.primary {
   width: auto;
   overflow: hidden;
   height: 25px;
-  width: 943px;
 }
 
 #search-bar .block .content {
@@ -4004,7 +4001,6 @@ h4.faq-section-subtitle {
 }
 
 .panel .panel-three-column .panel-col-first,.panel .panel-three-column .panel-col-second,.panel .panel-three-column .panel-col-third,.panel-flexible .panel-col-first .inside {
-  float: left;
   padding: 0;
 }
 
@@ -4946,4 +4942,24 @@ table.hours-today td.hours-col-loc:after {
 
 table.hours-today td.hours-col-time {
   white-space: nowrap;
+}
+
+/* liquid layout */
+@media only screen 
+and (max-width : 959px) {
+  .panel .panel-two-thirds-column .col-right,
+  .panel .panel-three-column .panel-col-first,
+  .panel .panel-three-column .panel-col-second,
+  .panel .panel-three-column .panel-col-third {
+    clear: both;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    width: 267px;
+  }
+
+  .panel .panel-col-third {
+    clear:both;
+  }
 }
