@@ -1638,20 +1638,6 @@ div.view:hover div.views-hide {
   width: 288px;
 }
 
-/* liquid layout */
-@media only screen 
-and (max-width : 959px) {
-  .panel .panel-two-thirds-column .col-right {
-    clear: both;
-    float: none;
-    margin: auto;
-  }
-
-  .panel .panel-col-third {
-    clear:both;
-  }
-}
-
 .panel .panel-three-column .panel-col-first,.panel .panel-three-column .panel-col-second,.panel .panel-three-column .panel-col-third {
   float: left;
 }
@@ -1681,7 +1667,6 @@ and (max-width : 959px) {
 .panel-2col .panel-separator {
   margin: 0 0 1em 0;
 }
-
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
   display: block
@@ -4016,7 +4001,6 @@ h4.faq-section-subtitle {
 }
 
 .panel .panel-three-column .panel-col-first,.panel .panel-three-column .panel-col-second,.panel .panel-three-column .panel-col-third,.panel-flexible .panel-col-first .inside {
-  float: left;
   padding: 0;
 }
 
@@ -4958,4 +4942,24 @@ table.hours-today td.hours-col-loc:after {
 
 table.hours-today td.hours-col-time {
   white-space: nowrap;
+}
+
+/* liquid layout */
+@media only screen 
+and (max-width : 959px) {
+  .panel .panel-two-thirds-column .col-right,
+  .panel .panel-three-column .panel-col-first,
+  .panel .panel-three-column .panel-col-second,
+  .panel .panel-three-column .panel-col-third {
+    clear: both;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    width: 267px;
+  }
+
+  .panel .panel-col-third {
+    clear:both;
+  }
 }
