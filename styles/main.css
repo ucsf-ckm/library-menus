@@ -1638,6 +1638,7 @@ div.view:hover div.views-hide {
   width: 288px;
 }
 
+/* liquid layout */
 @media only screen 
 and (max-width : 959px) {
   .panel .panel-two-thirds-column .col-right {
@@ -3462,7 +3463,7 @@ h1.page-title {
 }
 
 #content-area {
-  margin-left: 15px;
+  margin: auto;
   width: 910px;
 }
 
