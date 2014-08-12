@@ -1403,6 +1403,7 @@ div.user-login-block a {
 ul.nice-menu,ul.nice-menu ul {
   z-index: 5;
   position: relative;
+  margin-bottom:0;
 }
 
 ul.nice-menu li {
@@ -3380,7 +3381,7 @@ div.extra-info {
 
 .extra-info ul.extra-links {
   float: right;
-  padding: 0;
+  padding: 6px;
   line-height: 1em;
 }
 
@@ -3411,7 +3412,7 @@ div.extra-info ul li a {
 
 .extra-info .hours {
   float: left;
-  padding: 0 8px 0 12px;
+  padding: 6px 8px 0 12px;
   min-width: 40%;
 }
 
