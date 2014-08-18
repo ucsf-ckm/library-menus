@@ -3377,6 +3377,7 @@ div.extra-info {
   border-radius: 0.5em;
   color: #fff;
   margin-bottom: 3px;
+  clear: both;
 }
 
 .extra-info ul.extra-links {
