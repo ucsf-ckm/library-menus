@@ -4963,6 +4963,12 @@ and (max-width : 959px) {
     width: 267px;
   }
 
+  .panel .panel-two-thirds-column .col-left {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
   .panel .panel-col-third {
     clear:both;
   }
