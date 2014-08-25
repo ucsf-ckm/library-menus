@@ -3845,35 +3845,16 @@ ul.tabs.primary {
 }
 
 .block-grey h2.title {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/blue-block-title-right-top.gif) no-repeat right top;
+  background: #2b85bb;
+  border-radius: 0.3em 0.3em 0 0;
   color: #fff;
 }
 
-.block-grey h2.title span {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/blue-block-title-left-top.gif) no-repeat left top;
-  padding: 0;
-  display: block;
-}
-
-.block-grey h2.title span span {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/blue-block-title-right-bottom.gif) no-repeat right bottom;
-  display: block;
-}
-
-.block-grey h2.title span span span {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/blue-block-title-left-bottom.gif) no-repeat left bottom;
-  display: block;
-  padding-left: 8px;
-}
-
 .block-grey {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/block-bg-grey-bottom-narrow.gif) no-repeat center bottom;
+  background: #eee;
   padding-bottom: 3px;
-}
-
-.block-grey .block-inner {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/block-bg-grey-top-narrow.gif) no-repeat center top;
-  padding: 7px 7px 5px;
+  border: #c4c4c4 1px solid;
+  border-radius: 0.5em;
 }
 
 .panel-col-top .first h2.title {
@@ -3934,18 +3915,8 @@ ul.tabs.primary {
   padding: 10px 8px 0;
 }
 
-.panel .panel-three-column .block-grey {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/block-bg-grey-bottom-wide.gif) no-repeat center bottom;
-  margin-bottom: 0;
-}
-
 .panel .panel-three-column .panel-col-third .block-grey {
   margin-right: 0;
-}
-
-.panel .panel-three-column .block-grey .block-inner {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/block-bg-grey-top-wide.gif) no-repeat center top;
-  padding-bottom: 7px;
 }
 
 .two-column-block .item-list ul {
@@ -3996,6 +3967,10 @@ h4.faq-section-subtitle {
 
 .panel .panel-three-column .panel-col-first,.panel .panel-three-column .panel-col-second {
   margin-right: 24px;
+}
+
+.panel-three-column .panel-half-column .panel-pane {
+  width: 441px;
 }
 
 .panel-block {
@@ -4935,7 +4910,7 @@ and (max-width: 944px) {
     width: 597px;
   }
 
-  .block-inner {
+  .block-inner, .panel-three-column .panel-half-column .panel-pane {
     width: 597px;
     display: block;
   }
