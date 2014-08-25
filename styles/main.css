@@ -3303,7 +3303,7 @@ ul li,.item-list ul li {
   font-size: 0.75em;
   line-height: 1.333em;
   background-color: #fff;
-  padding: 7px 20px 25px;
+  padding: 7px 10px 25px;
   position: relative;
 }
 
@@ -4950,7 +4950,7 @@ table.hours-today td.hours-col-time {
 
 /* liquid layout */
 @media only screen 
-and (max-width: 965px) {
+and (max-width: 944px) {
   .panel .panel-two-thirds-column .col-right,
   .panel .panel-three-column .panel-col-first,
   .panel .panel-three-column .panel-col-second,
