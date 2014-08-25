@@ -4950,7 +4950,7 @@ table.hours-today td.hours-col-time {
 
 /* liquid layout */
 @media only screen 
-and (max-width : 959px) {
+and (max-width: 965px) {
   .panel .panel-two-thirds-column .col-right,
   .panel .panel-three-column .panel-col-first,
   .panel .panel-three-column .panel-col-second,
