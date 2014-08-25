@@ -3783,15 +3783,8 @@ ul.tabs.primary {
 }
 
 .block-white h2.title {
-}
-
-.block-white h2.title,.block-white-top h2.title,.block-white-middle h2.title {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/block-white-title-top-right.gif) no-repeat right top;
-}
-
-.block-white h2.title span,.block-white-top h2.title span,.block-white-middle h2.title span {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/block-white-title-top-left.gif) no-repeat left top;
-  padding-left: 15px;
+  background: #ccc;
+  border-radius: 0.3em 0.3em 0 0;
 }
 
 .block-white ul li a,.block-white-top ul li a,.block-white-middle ul li a,.block-white-bottom ul li a {
@@ -3813,10 +3806,6 @@ ul.tabs.primary {
 .block-white-bottom h2.title span {
   background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/block-white-title-bottom-left.gif) no-repeat left top;
   padding-left: 14px;
-}
-
-.block-white-top {
-  width: 287px;
 }
 
 .block-white-top {
@@ -3844,7 +3833,9 @@ ul.tabs.primary {
 }
 
 .block-white,.block-white-bottom {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/block-white-bottom-narrow.gif) no-repeat left bottom;
+  border: #c4c4c4 1px solid;
+  width: 100%;
+  border-radius: 0.5em;
 }
 
 .block-white-no-title .block-inner {
@@ -4586,23 +4577,6 @@ div.terms {
   width: 100%;
 }
 
-.panel-home .block-white-top,.panel-home .block-white-middle {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/block-white-bottom.gif) no-repeat scroll center top;
-  width: 287px;
-}
-
-.panel-home .col-right {
-}
-
-.panel-home .block-white,.panel-home .block-white-bottom {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/block-white-bottom.gif) no-repeat center bottom;
-  width: 287px;
-}
-
-.panel-home .block-white-top .content,.panel-home .block-white-middle .content,.panel-home .block-white-bottom .content {
-  padding: 0 0 0 13px;
-}
-
 .panel-home .block-white-top ul li a,.panel-home .block-white-middle ul li a,.panel-home .block-white-bottom ul li a {
   display: block;
   margin: 0;
@@ -4958,7 +4932,12 @@ and (max-width: 944px) {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
-    width: 267px;
+    width: 597px;
+  }
+
+  .block-inner {
+    width: 597px;
+    display: block;
   }
 
   .panel .panel-two-thirds-column .col-left {
