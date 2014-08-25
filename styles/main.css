@@ -4583,6 +4583,9 @@ div.terms {
 
 .panel-home {
   padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .panel-home .block-white-top,.panel-home .block-white-middle {
