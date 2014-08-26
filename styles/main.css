@@ -4916,6 +4916,10 @@ and (max-width: 944px) {
     display: block;
   }
 
+  #sidebar-right .block-inner {
+    width: 206px;
+  }
+
   .panel .panel-two-thirds-column .col-left {
     margin-left: auto;
     margin-right: auto;
