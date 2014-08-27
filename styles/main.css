@@ -3316,6 +3316,10 @@ html,body {
   min-width: 687px;
 }
 
+html.ie8,body.ie8 {
+  min-width: 930px;
+}
+
 #page-wrapper,#page {
   min-height: 100%;
 }
