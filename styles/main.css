@@ -1647,6 +1647,10 @@ div.view:hover div.views-hide {
   margin-right: 17px;
 }
 
+#main-wrapper {
+  padding: 10px;
+}
+
 #main-wrapper h1.title {
   display: block;
 }
@@ -4902,7 +4906,7 @@ table.hours-today td.hours-col-time {
 
 /* liquid layout */
 @media only screen 
-and (max-width: 944px) {
+and (max-width: 954px) {
   .panel .panel-two-thirds-column .col-right,
   .panel .panel-three-column .panel-col-first,
   .panel .panel-three-column .panel-col-second,
