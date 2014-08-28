@@ -3468,8 +3468,7 @@ h1.page-title {
 }
 
 #sidebar-right {
-  position: absolute;
-  right: 20px;
+  float: right;
   width: 206px;
 }
 
@@ -4044,6 +4043,10 @@ h4.faq-section-subtitle {
 
 .content-area .panel-region-separator,.content-area .panel-separator {
   clear: both;
+}
+
+.content-area .panel-region-separator.full-width-minus-one-sidebar {
+  clear: left;
 }
 
 .node .submitted,.comment .submitted {
