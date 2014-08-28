@@ -3321,7 +3321,7 @@ html,body {
 }
 
 html.ie8,body.ie8 {
-  min-width: 954px;
+  min-width: 964px;
 }
 
 #page-wrapper,#page {
@@ -4906,7 +4906,7 @@ table.hours-today td.hours-col-time {
 
 /* liquid layout */
 @media only screen 
-and (max-width: 954px) {
+and (max-width: 964px) {
   .panel .panel-two-thirds-column .col-right,
   .panel .panel-three-column .panel-col-first,
   .panel .panel-three-column .panel-col-second,
