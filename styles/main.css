@@ -3470,6 +3470,7 @@ h1.page-title {
 #sidebar-right {
   float: right;
   width: 206px;
+  margin-right: -24px;
 }
 
 body.sidebar-left .content-area,body.sidebar-right .content-area {
@@ -4925,10 +4926,6 @@ and (max-width: 964px) {
   .block-inner, .panel-three-column .panel-half-column .panel-pane {
     width: 597px;
     display: block;
-  }
-
-  #sidebar-right .block-inner {
-    width: 206px;
   }
 
   .panel .panel-two-thirds-column .col-left {
