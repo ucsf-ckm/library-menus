@@ -4552,6 +4552,7 @@ a.quicksearchResultLink:hover {
 
 body.section-blogs #content #content-inner .header-area h1 {
   display: none;
+  clear: none;
 }
 
 div.terms {
@@ -4660,6 +4661,7 @@ h3 .panel-region-separator {
 
 .no-left-col .header-area {
   display: none;
+  clear: none;
 }
 
 .no-left-col #content .content-area {
