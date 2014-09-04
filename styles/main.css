@@ -3459,12 +3459,13 @@ h1.page-title {
 
 #content-area {
   margin: auto;
-  max-width: 910px;
+  width: 910px;
 }
 
 #sidebar-left {
   float: left;
   width: 206px;
+  border-right: 8px solid white;
 }
 
 #sidebar-right {
@@ -4048,6 +4049,15 @@ h4.faq-section-subtitle {
 
 .content-area .panel-region-separator.full-width-minus-one-sidebar {
   clear: left;
+}
+
+.no-left-col.one-sidebars .panel-region-separator {
+    clear: left;
+    width: 700px;
+}
+
+.no-right-col.one-sidebars .panel-region-separator {
+  clear: right;
 }
 
 .node .submitted,.comment .submitted {
@@ -4659,7 +4669,8 @@ h3 .panel-region-separator {
   width: 700px;
 }
 
-.no-left-col .header-area {
+.no-left-col .header-area,
+.no-right-col .header-area {
   display: none;
   clear: none;
 }
@@ -4925,7 +4936,7 @@ and (max-width: 964px) {
     width: 597px;
   }
 
-  .block-inner, .panel-three-column .panel-half-column .panel-pane {
+  .panel-half-column .block-inner, .panel-three-column .panel-half-column .panel-pane {
     width: 597px;
     display: block;
   }
@@ -4942,5 +4953,10 @@ and (max-width: 964px) {
 
   #sidebar-right {
     display: none;
+  }
+
+  #content-area {
+    max-width: 910px;
+    width: inherit;
   }
 }
