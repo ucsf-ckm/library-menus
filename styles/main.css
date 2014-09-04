@@ -4939,4 +4939,8 @@ and (max-width: 964px) {
   .panel .panel-col-third {
     clear:both;
   }
+
+  #sidebar-right {
+    display: none;
+  }
 }
