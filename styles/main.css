@@ -3449,10 +3449,6 @@ h1.page-title {
   border-bottom: #ccc solid 1px;
 }
 
-.header-area {
-  clear: both;
-}
-
 .content-area .content-wrapper #content {
   width: 695px;
 }
@@ -3465,13 +3461,14 @@ h1.page-title {
 #sidebar-left {
   float: left;
   width: 206px;
-  border-right: 8px solid white;
+  border-right: 16px solid white;
 }
 
 #sidebar-right {
   float: right;
   width: 206px;
   margin-right: -24px;
+  border-left: 16px solid white;
 }
 
 body.sidebar-left .content-area,body.sidebar-right .content-area {
@@ -4043,7 +4040,7 @@ h4.faq-section-subtitle {
   padding-top: 22px;
 }
 
-.content-area .panel-region-separator,.content-area .panel-separator {
+.content-area .panel-separator {
   clear: both;
 }
 
@@ -4744,6 +4741,10 @@ h3 .panel-region-separator {
   float: right;
 }
 
+#news-pane {
+  background: white;
+}
+
 table.no-border {
   border: 0;
   border-collapse: separate;
@@ -4953,6 +4954,10 @@ and (max-width: 964px) {
 
   #sidebar-right {
     display: none;
+  }
+
+  #sidebar-right.sticky {
+    display: block;
   }
 
   #content-area {
