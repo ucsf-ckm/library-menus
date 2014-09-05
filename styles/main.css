@@ -3658,8 +3658,8 @@ ul.tabs.primary {
 }
 
 .block-blue-menu h2.title {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/side-menu-top-title.gif) no-repeat left top;
-  text-transform: uppercase;
+  background: #4e94cc;
+  border-radius: 0.5em 0.5em 0 0;  text-transform: uppercase;
   color: #fff;
   line-height: 16px;
   width: 190px;
@@ -4651,11 +4651,11 @@ div.content-profile-display {
 }
 
 h3 .panel-region-separator {
-  border: 0px;
+  border: 0;
 }
 
 #sidebar-right .panel-region-separator,#sidebar-left .panel-region-separator,.panel-two-thirds-column .panel-region-separator {
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 
 .one-sidebars #content .content-area {
@@ -4673,12 +4673,17 @@ h3 .panel-region-separator {
 }
 
 .no-left-col #content .content-area {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .no-right-col.one-sidebars .content-area .panel-pane .block-inner {
   display: inline-block;
   max-width: 685px;
+}
+
+.two-sidebars .middle-panel .content-area .panel-pane .block-inner {
+  display: inline-block;
+  max-width: 485px;
 }
 
 #db-node-wrapper {
@@ -4942,7 +4947,8 @@ and (max-width: 964px) {
     width: 597px;
   }
 
-  .panel-half-column .block-inner, .panel-three-column .panel-half-column .panel-pane {
+  .panel-half-column .block-inner, .panel-three-column .panel-half-column .panel-pane,
+  #sidebar-left .block-blue-menu {
     width: 597px;
     display: block;
   }
@@ -4961,12 +4967,22 @@ and (max-width: 964px) {
     display: none;
   }
 
-  #sidebar-right.sticky {
+  #sidebar-left {
+    float: none;
+  }
+
+  #sidebar-right.sticky,
+  #hours-pane {
     display: block;
+  }
+
+  .block-blue-menu h2.title {
+    width: 581px;
   }
 
   #content-area {
     max-width: 910px;
     width: inherit;
   }
+}
 }
