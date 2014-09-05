@@ -4676,6 +4676,11 @@ h3 .panel-region-separator {
   margin-left: 0px;
 }
 
+.no-right-col.one-sidebars .content-area .panel-pane .block-inner {
+  display: inline-block;
+  max-width: 685px;
+}
+
 #db-node-wrapper {
   width: 675px;
   float: left;
