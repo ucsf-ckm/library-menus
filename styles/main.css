@@ -4681,6 +4681,7 @@ h3 .panel-region-separator {
   max-width: 685px;
 }
 
+.two-sidebars .middle-panel,
 .two-sidebars .middle-panel .content-area .panel-pane .block-inner {
   display: inline-block;
   max-width: 485px;
