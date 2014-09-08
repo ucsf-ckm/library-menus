@@ -2937,6 +2937,11 @@ ul.nice-menu li {
   position: relative;
   font-size: 12px;
   z-index: 100;
+  border-right: solid 1px #ddd;
+}
+
+#nice-menu-0 li:last-child {
+  border-right: none;
 }
 
 #nice-menu-0 li a {
@@ -2953,7 +2958,7 @@ ul.nice-menu li {
 }
 
 #nice-menu-0 li a span {
-  padding: 3px 20px 3px 0;
+  padding: 3px 10px;
   display: block;
   line-height: 18px;
 }
