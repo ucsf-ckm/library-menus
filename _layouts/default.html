@@ -156,7 +156,7 @@
           };
 
           var success = function (result) {
-            var appendHours = function (id, label) {
+            var prependHours = function (id, label) {
               var hours = locations[id];
               if (hours) {
                 var hoursText = hours[0].text.replace(/[^\w\s:-]/,'');
@@ -168,9 +168,9 @@
 
             var locations = result.locations;
             if (locations) {
-              $('#header-hours').prepend('<span>Today:</span>')
-              appendHours('parnassus', 'Parnassus');
-              appendHours('missionBay', 'MB Library');
+              $('#header-hours').prepend('<span>Today:</span>');
+              prependHours('missionBay', 'MB Library');
+              prependHours('parnassus', 'Parnassus');
             }
           };
 
