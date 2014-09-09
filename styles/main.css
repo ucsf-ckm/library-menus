@@ -3192,7 +3192,6 @@ ul.nice-menu li {
 
 
 body {
-  margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   font-size: 100%;
@@ -3323,6 +3322,8 @@ ul li,.item-list ul li {
 html,body {
   height: 100%;
   min-width: 687px;
+  max-width: 964px;
+  margin: auto;
 }
 
 html.ie8,body.ie8 {
