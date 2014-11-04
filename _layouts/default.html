@@ -157,12 +157,12 @@
           };
 
           var success = function (result) {
-            var prependHours = function (id, label) {
+            var prependHours = function (id, label, className) {
               var hours = locations[id];
               if (hours) {
                 var hoursText = hours[0].text.replace(/[^\w\s:-]/,'');
                 $('#header-hours ul').prepend(
-                  $('<li>').append(label + ': ' + hoursText)
+                  $('<li>').addClass(className).append(label + ': ' + hoursText)
                 );
               }
             };
@@ -170,9 +170,9 @@
             var locations = result.locations;
             if (locations) {
               $('#header-hours').prepend('<span>Today:</span>');
-              prependHours('missionBayHub', 'MB Hub');
-              prependHours('missionBay', 'MB Library');
-              prependHours('parnassus', 'Parnassus');
+              prependHours('missionBayHub', 'MB Hub', 'show-for-large');
+              prependHours('missionBay', 'MB Library', '');
+              prependHours('parnassus', 'Parnassus', '');
             }
           };
 

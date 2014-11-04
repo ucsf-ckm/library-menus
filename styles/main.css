@@ -4972,10 +4972,10 @@ and (max-width: 964px) {
   }
 
   .panel .panel-col-third {
-    clear:both;
+    clear: both;
   }
 
-  #sidebar-right {
+  .show-for-large.show-for-large.show-for-large, #sidebar-right {
     display: none;
   }
 
