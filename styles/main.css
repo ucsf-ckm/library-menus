@@ -3414,13 +3414,17 @@ div.extra-info ul li a {
   line-height: 1em;
 }
 
-.hours span {
-  padding: 3px 20px 0 0;
-  float: left;
+.hours a {
+  color: white;
 }
 
 .hours ul {
   display: inline-block;
+}
+
+.extra-info .hours ul {
+  overflow: initial;
+  padding-left: 12px;
 }
 
 .extra-info .hours {
