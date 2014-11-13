@@ -3125,8 +3125,8 @@ ul.nice-menu li {
 }
 
 .news-flash .news-content-wrap .content {
-  padding: 19px 16px 19px !important;
-  height: 43px;
+  padding: 19px 16px !important;
+  height: 5em;
 }
 
 .news-photo-pager {
@@ -3136,7 +3136,7 @@ ul.nice-menu li {
   left: 490px;
   padding-right: 10px;
   text-align: right;
-  width: 101px;
+  width: 115px;
 }
 
 .news-photo-pager a.pager-item {
@@ -3176,10 +3176,7 @@ ul.nice-menu li {
 }
 
 .news-photo-pager a.morelink {
-  clear: both;
-  margin-top: 5px;
-  float: right;
-  width: 70px;
+  line-height: 2em;
 }
 
 .news-photo-pager a.morelink:hover {
