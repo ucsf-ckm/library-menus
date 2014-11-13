@@ -3367,14 +3367,160 @@ img.logo {
   color: #FFF;
 }
 
-#search-bar {
+/*** foundation stuff ***/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-color: white;
+  font-family: inherit;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  height: 2.3125rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+}
+
+.row .row.collapse {
+  width: auto;
+  margin: 0;
+  max-width: none;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+.row.collapse > .column, .row.collapse > .columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+[class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+
+button, .button {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Roboto Condensed", "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #2571a1;
+  border-color: #1e5a81;
+  color: white;
+  transition: background-color 300ms ease-out;
+}
+
+.prefix, .postfix {
+  display: block;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  font-size: 0.875rem;
+  height: 2.3125rem;
+  line-height: 2.3125rem;
+}
+
+.postfix.button {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  line-height: 2.125rem;
+  border: none;
+}
+
+@media only screen and (min-width: 64.063em) {
+  .column, .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+  }
+
+  .large-12 {
+    width: 100%;
+  }
+
+  .large-8 {
+    width: 66.66667%;
+  }
+
+  .large-4 {
+    width: 33.33333%;
+  }
+
+  .column, .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+  }
+}
+
+/*** end foundation stuff ***/
+
+.large-12.columns {
+  margin-top: 1rem;
+}
+
+.search-bar {
   background-color: #ad4200;
-  color: #fff;
-  padding: 7px 0 7px 17px;
-  border-bottom: 1px solid #fff;
-  margin-bottom: 3px;
+  margin-bottom: 1em;
   border-radius: 0.5em;
 }
+
 
 input.form-submit {
   text-transform: uppercase;
@@ -3622,40 +3768,24 @@ ul.tabs.primary {
   margin: 0 8px;
 }
 
-#search-bar .block {
+.search-bar .block {
   margin-bottom: 0;
   width: auto;
   overflow: hidden;
   height: 25px;
 }
 
-#search-bar .block .content {
+.search-bar .block .content {
   font-size: 1em;
   line-height: 24px;
   font-weight: normal;
 }
 
-#search-bar #block-ucsf_quicksearch-ucsf_quicksearch_block .form-item {
+.search-terms {
   float: left;
   margin: 0;
   margin-right: 5px;
   width: 230px;
-}
-
-#search-bar #block-ucsf_quicksearch-ucsf_quicksearch_block label {
-  float: left;
-  font-weight: normal;
-  padding-right: 9px;
-  padding-top: 1px;
-}
-
-#search-bar #block-ucsf_quicksearch-ucsf_quicksearch_block .content {
-  padding: 0;
-  margin-top: 0;
-}
-
-#search-bar #block-ucsf_quicksearch-ucsf_quicksearch_block input#edit-quicksearch-keywords {
-  width: 223px;
 }
 
 .block-blue-menu {

@@ -91,21 +91,18 @@
         </ul>
       </div>
 
-      <div id="search-bar">
-        <div class="block block-ucsf_quicksearch" id="block-ucsf_quicksearch-ucsf_quicksearch_block">
-          <div class="block-inner">
-            <div class="content">
-              <form action="/quicksearch"  accept-charset="UTF-8" method="post" id="ucsf-quicksearch-form">
-                <div>
-                  <div class="form-item" id="edit-quicksearch-keywords-wrapper">
-                    <input type="text" maxlength="128" name="quicksearch_keywords" id="edit-quicksearch-keywords" aria-label="Search terms" size="25" value="" class="form-text" />
-                  </div>
-                  <input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
-                  <input type="hidden" name="form_id" id="edit-ucsf-quicksearch-form" value="ucsf_quicksearch_form"  />
-                </div>
-              </form>
+      <div class="row has-form search-bar">
+        <div class="large-12 columns">
+          <form class="search-form">
+            <div class="row collapse">
+              <div class="large-8 small-9 columns">
+                <input type="search" title="Search terms" class="search-terms" placeholder="Find articles, journals, books and more" autofocus>
+              </div>
+              <div class="large-4 small-3 columns">
+                <input type="submit" class="button postfix" value="Search">
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
 
