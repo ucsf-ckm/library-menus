@@ -236,6 +236,14 @@
         }
       };
     }());
+
+    $('.search-form').each(function (index, elem) {
+      elem.onsubmit = function (event) {
+        event.preventDefault ? event.preventDefault() : event.returnValue = false;
+        var terms = this.querySelector('.search-terms').value;
+        window.location = 'http://search.library.ucsf.edu/#' + encodeURIComponent(terms);
+      }
+    });
   </script>
 </body>
 </html>
