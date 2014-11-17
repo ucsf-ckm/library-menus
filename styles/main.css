@@ -3515,7 +3515,6 @@ button, .button {
 .search-bar {
   background-color: #ad4200;
   margin-bottom: 1em;
-  border-radius: 0.5em;
 }
 
 
@@ -3529,7 +3528,6 @@ div.extra-info {
   width: 100%;
   height: 30px;
   background-color: #2B85BB;
-  border-radius: 0.5em;
   color: #fff;
   margin-bottom: 3px;
   clear: both;
