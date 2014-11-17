@@ -3517,7 +3517,6 @@ button, .button {
   margin-bottom: 1em;
 }
 
-
 input.form-submit {
   text-transform: uppercase;
   color: #ad4200;
@@ -3781,6 +3780,14 @@ ul.tabs.primary {
   margin: 0;
   margin-right: 5px;
   width: 230px;
+}
+
+input.search-terms {
+  border-radius: 0.3em 0 0 0.3em;
+}
+
+input.button.postfix {
+  border-radius: 0 0.3em 0.3em 0;
 }
 
 .block-blue-menu {
