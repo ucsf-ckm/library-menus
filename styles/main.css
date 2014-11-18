@@ -1,3 +1,20 @@
+/* Ripped from Foundation */
+.left {
+  float: left !important;
+}
+.right {
+  float: right !important;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+/* End of stuff ripped from Foundation */
 
 #aggregator .feed-source .feed-title {
   margin-top: 0;
