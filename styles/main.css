@@ -3495,14 +3495,24 @@ button, .button {
   border: none;
 }
 
-@media only screen and (min-width: 64.063em) {
-  .column, .columns {
-    position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    float: left;
-  }
+.small-3 {
+  width: 25%;
+}
+.small-4 {
+  width: 33.33333%;
+}
+.small-8 {
+  width: 66.66667%;
+}
+.small-9 {
+  width: 75%;
+}
+.column, .columns {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
 
+@media only screen and (min-width: 64.063em) {
   .large-12 {
     width: 100%;
   }
@@ -3517,8 +3527,6 @@ button, .button {
 
   .column, .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
     float: left;
   }
 }
