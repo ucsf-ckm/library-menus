@@ -92,6 +92,15 @@
       </div>
 
       <div class="row has-form search-bar">
+<!--[if lt IE 9]>
+        <div style="padding: 20px 0 0 17px;">
+          <form action="/quicksearch" method="post">
+            <input type="search" style="width: 50%; display: inline-block" title="Search terms">
+            <input type="submit" style="display: inline-block" value="Search">
+          </form>
+        </div>
+<![endif]-->
+<!--[if (IE 9)|!(IE)]><!-->
         <div class="large-12 columns">
           <form class="search-form">
             <div class="row collapse">
@@ -104,14 +113,12 @@
             </div>
           </form>
         </div>
+<!--<![endif]-->
       </div>
 
       <div id="main-wrapper">
 
-
-
         {{content}}
-
 
       </div>
       <div id="footer">
