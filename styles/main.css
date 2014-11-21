@@ -3540,6 +3540,7 @@ button, .button {
 .search-bar {
   background-color: #ad4200;
   margin-bottom: 1em;
+  height: 71px;
 }
 
 input.form-submit {
