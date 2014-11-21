@@ -3577,6 +3577,7 @@ div.extra-info ul li a {
 
 .hours {
   line-height: 1em;
+  height: 1em;
 }
 
 .hours a {
