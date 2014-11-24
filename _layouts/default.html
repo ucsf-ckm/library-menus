@@ -174,10 +174,10 @@
 
             var locations = result.locations;
             if (locations) {
-              $('#header-hours').prepend('<a href="http://www.library.ucsf.edu/visit/hours">Today:</a>');
               prependHours('missionBayHub', 'MB Hub', 'show-for-large', 'http://www.library.ucsf.edu/visit/parnassus');
               prependHours('missionBay', 'MB Library', '', 'http://www.library.ucsf.edu/visit/missionbay');
               prependHours('parnassus', 'Parnassus', '', 'http://www.library.ucsf.edu/visit/missionhall');
+              $('#header-hours ul').prepend('<li><a href="http://www.library.ucsf.edu/visit/hours">Today:</a></li>');
             }
           };
 
