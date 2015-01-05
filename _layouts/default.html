@@ -264,7 +264,6 @@
                 var newsImage;
                 for (var i = 0; i < result.feed.entries.length; i++) {
                   entry = result.feed.entries[i];
-                  console.log(entry);
                   newsItem = $("<li>").addClass("news-flash news-flash-item news-flash-item-" + (i+1));
                   if (i ===0) {
                     newsItem.addClass("news-flash-current");
