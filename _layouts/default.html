@@ -242,6 +242,43 @@
           window.attachEvent("onload", getGuides);
         }
       };
+
+      Drupal.behaviors.ucsfLibraryNews = function () {
+        var container = $('#news-carousel');
+        if (container.length === 0) {
+          return;
+        }
+
+        var fetchNews = function () {
+          var initialize = function () {
+            var feed = new google.feeds.Feed("https://blogs.library.ucsf.edu/newstest/feed/");
+            feed.load(function(result) {
+              if (!result.error) {
+                var newsItems = $('<ul>');
+                for (var i = 0; i < result.feed.entries.length; i++) {
+                  var entry = result.feed.entries[i];
+                  console.log(entry);
+                  var newsItem = $("<li>");
+                  newsItem.text(entry.title);
+                  newsItems.append(newsItem);
+                }
+                container.empty();
+                container.append(newsItems);
+              }
+            });
+          };
+          google.load("feeds", "1", {nocss: true, callback: initialize});
+        };
+
+        if (typeof google === 'object') {
+          return fetchNews();
+        }
+
+        var script = document.createElement('script');
+        document.body.appendChild(script);
+        script.onload = fetchNews;
+        script.src = 'https://www.google.com/jsapi';
+      };
     }());
 
     $('.search-form').each(function (index, elem) {
