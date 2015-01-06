@@ -10,7 +10,8 @@
   <meta charset="utf-8" />
   <title>{% if page.title %}{{page.title}} | {% endif %}UCSF Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link type="text/css" rel="stylesheet" media="all" href="/styles/main.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="/styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
   <script src="/scripts/main.js"></script>
   <script>
   jQuery.extend(Drupal.settings, { "basePath": "/", "nice_menus_options": { "delay": "800", "speed": "fast" }, "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
@@ -140,6 +141,7 @@
     </div>
   </div> <!-- /#page-wrapper -->
   <script src="https://apis.ucsf.edu/jsapi?library"></script>
+  <script src="/slick/slick.min.js"></script>
   <script>
   Drupal.behaviors.tableHeader = function(){};
   </script>
@@ -255,8 +257,8 @@
             feed.load(function(result) {
               if (!result.error) {
                 // Drupal legacy DOM disaster!
-                var newsItems = $('<div class="inside"><div class="panel-pane  news-item-landing first last no-separator"><div class="block-inner"><div class="content"><div class="news-items-section"><div class="view view-news-for-panels view-id-news_for_panels view-display-id-default view-dom-id-2 view-news-for-panels view-id-news_for_panels view-display-id-default view-dom-id-2"><div class="view-content"><div class="item-list"><ul>');
-                var carouselContainer = newsItems.find('ul');
+                var newsItems = $('<div class="inside"><div class="panel-pane  news-item-landing first last no-separator"><div class="block-inner"><div class="content"><div class="news-items-section"><div class="view view-news-for-panels view-id-news_for_panels view-display-id-default view-dom-id-2 view-news-for-panels view-id-news_for_panels view-display-id-default view-dom-id-2"><div class="view-content"><div class="item-list"><div class="slick">');
+                var carouselContainer = newsItems.find('.slick');
                 var entry;
                 var newsItem;
                 var newsMeat;
@@ -264,7 +266,7 @@
                 var newsImage;
                 for (var i = 0; i < result.feed.entries.length; i++) {
                   entry = result.feed.entries[i];
-                  newsItem = $("<li>").addClass("news-flash news-flash-item news-flash-item-" + (i+1));
+                  newsItem = $("<div>").addClass("news-flash news-flash-item news-flash-item-" + (i+1));
                   if (i ===0) {
                     newsItem.addClass("news-flash-current");
                   } else {
@@ -275,12 +277,21 @@
                   newsMeat.find('h2').append(newsLink);
                   newsImage = $(entry.content).find('img').attr('src');
                   newsItem.css("background-image", "url('" + newsImage + "')");
+                  newsItem.css("background-repeat", "no-repeat");
                   newsItem.append(newsMeat);
                   carouselContainer.append(newsItem);
                 }
-                carouselContainer.append('<div><div class="news-photo-pager"><a class="pager-item pager-item-1 news-photo-pager-current">1</a><a class="pager-item pager-item-2">2</a><a class="pager-item pager-item-3">3</a><a class="pager-item pager-item-4">4</a><a class="morelink" href="/news">More</a></div></div>');
+                // carouselContainer.append('<div><div class="news-photo-pager"><a class="pager-item pager-item-1 news-photo-pager-current">1</a><a class="pager-item pager-item-2">2</a><a class="pager-item pager-item-3">3</a><a class="pager-item pager-item-4">4</a><a class="morelink" href="/news">More</a></div></div>');
                 container.empty();
                 container.append(newsItems);
+
+                carouselContainer.slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  centerMode: true
+                });
               }
             });
           };
