@@ -3084,54 +3084,13 @@ ul.nice-menu li {
   position: relative;
 }
 
-.view-content-news-for-panels ul {
-  margin: 0;
-}
-
-.view-news-for-panels .item-list ul li {
-  list-style-type: none;
-  margin: 0;
-  list-style-image: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
 .news-flash {
   position: relative;
 }
 
-.news-flash,.news-photo-wrap,.photo-corner-wrap-bottom {
-  height: 292px;
-  width: 598px;
-  display: block;
-}
-
-.photo-corner-wrap-bottom {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/news-photo-wrap-bottom.png) no-repeat left bottom;
-}
-
-.news-photo-wrap {
-  background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/news-photo-wrap-top.png) no-repeat left top;
-}
-
-.news-flash-hidden {
-  display: none;
-}
-
-.news-flash img {
-  display: none;
-}
-
 .news-flash h2 {
   margin: 0;
-  width: 470px;
   color: #3083bd;
-}
-
-.news-flash p {
-  margin: 5px 0;
-  color: #000;
 }
 
 .news-flash .news-content-wrap {
@@ -3146,64 +3105,10 @@ ul.nice-menu li {
   height: 5em;
 }
 
-.news-photo-pager {
-  opacity: 1;
-  position: absolute;
-  top: 220px;
-  left: 490px;
-  padding-right: 10px;
-  text-align: right;
-  width: 115px;
+.slick-slide {
+  width: 390px;
+  margin: 0 42px;
 }
-
-.news-photo-pager a.pager-item {
-  background-color: #8ab0c3;
-  border: white solid 1px;
-  padding: 0 4px;
-  margin-left: 2px;
-  color: #fff;
-  opacity: 1;
-  float: left;
-}
-
-.news-flash-item,.news-photo-pager a:hover {
-  text-decoration: none;
-  cursor: hand;
-  cursor: pointer;
-}
-
-.news-photo-pager a.news-photo-pager-current {
-  background: #fff;
-  color: #8ab0c3;
-}
-
-.news-photo-pager a.news-flash-rss-link {
-  background: transparent url(https://www.library.ucsf.edu/misc/feed.png) no-repeat scroll left top;
-  display: block;
-  float: left;
-  width: 17px;
-  height: 17px;
-  text-indent: -9999px;
-  text-align: left;
-  border: none;
-  padding: 0;
-  margin-left: 8px;
-  overflow: hidden;
-  clear: right;
-}
-
-.news-photo-pager a.morelink {
-  line-height: 2em;
-}
-
-.news-photo-pager a.morelink:hover {
-  text-decoration: underline;
-}
-
-
-
-
-
 
 body {
   padding: 0;
