@@ -3080,9 +3080,6 @@ ul.nice-menu li {
 
 #secondary-menu .last a {
 }
-.panel-home .news-items-section .view-content {
-  position: relative;
-}
 
 .news-flash {
   position: relative;
@@ -3107,7 +3104,11 @@ ul.nice-menu li {
 
 .slick-slide {
   width: 390px;
-  margin: 0 42px;
+  margin: 0 13px;
+}
+
+button.slick-prev:before, button.slick-next:before {
+  color: #aaa;
 }
 
 body {
