@@ -266,18 +266,12 @@
                 var newsImage;
                 for (var i = 0; i < result.feed.entries.length; i++) {
                   entry = result.feed.entries[i];
-                  newsItem = $("<div>").addClass("news-flash news-flash-item news-flash-item-" + (i+1));
-                  if (i ===0) {
-                    newsItem.addClass("news-flash-current");
-                  } else {
-                    newsItem.addClass("news-flash-hidden");
-                  }
-                  newsMeat = $('<div class="photo-corner-wrap-bottom"><div class="news-photo-wrap"><div class="news-content-wrap"><div class="content"><h2>');
+                  newsItem = $("<div>").addClass("news-flash");
+                  newsMeat = $('<div class="news-content-wrap"><div class="content"><h2>');
                   newsLink = $('<a>').attr('href', entry.link).text(entry.title);
                   newsMeat.find('h2').append(newsLink);
-                  newsImage = $(entry.content).find('img').attr('src');
-                  newsItem.css("background-image", "url('" + newsImage + "')");
-                  newsItem.css("background-repeat", "no-repeat");
+                  newsImage = $(entry.content).find('img');
+                  newsItem.append(newsImage);
                   newsItem.append(newsMeat);
                   carouselContainer.append(newsItem);
                 }
@@ -286,11 +280,9 @@
                 container.append(newsItems);
 
                 carouselContainer.slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  centerMode: true
+                  autoplay: true,
+                  centerMode: true,
+                  variableWidth: true
                 });
               }
             });

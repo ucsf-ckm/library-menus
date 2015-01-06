@@ -583,16 +583,6 @@ $(document).ready(function(){
   if((blue_menu_exists+left_sidebar_exists) > 0){
     $(regular_title_div).hide();
   }
-
-  //for the /news page, do not replace the title, just get rid of it...
-  var is_news_page = $(".page-news").length;
-
-  if(is_news_page){
-    $(".middle-panel h1").hide();
-
-    //add the extra RSS icon to the top of the news page, after the title...
-    $(".middle-panel #ucsf-library-news-pane h2.title").css('display','inline').after('<a href="/news/all/feed" title="UCSF Library News RSS Feed"><img alt="RSS feed" id="news-rss-icon-small" src="https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/images/rss_icon_small.gif" /></a>');
-  }
 });
 ;
 /**
