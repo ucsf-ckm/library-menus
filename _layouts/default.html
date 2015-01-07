@@ -276,14 +276,14 @@
                   newsItem.append(newsLink);
                   carouselContainer.append(newsItem);
                 }
-                // carouselContainer.append('<div><div class="news-photo-pager"><a class="pager-item pager-item-1 news-photo-pager-current">1</a><a class="pager-item pager-item-2">2</a><a class="pager-item pager-item-3">3</a><a class="pager-item pager-item-4">4</a><a class="morelink" href="/news">More</a></div></div>');
+
                 container.empty();
                 container.append(newsItems);
 
                 carouselContainer.slick({
                   autoplay: true,
                   centerMode: true,
-                  variableWidth: true,
+                  variableWidth: true
                 });
               }
             });
