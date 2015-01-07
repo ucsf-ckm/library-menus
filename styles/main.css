@@ -3090,6 +3090,10 @@ ul.nice-menu li {
   color: #3083bd;
 }
 
+.ie8 .news-flash h2 {
+  margin-top -24px;
+}
+
 .news-flash .news-content-wrap {
   background: transparent url(https://www.library.ucsf.edu/sites/all/themes/ucsf_theme/css/images/news-module-transparent-bg.png) repeat;
   position: absolute;
