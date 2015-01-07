@@ -268,11 +268,12 @@
                   entry = result.feed.entries[i];
                   newsItem = $("<div>").addClass("news-flash");
                   newsMeat = $('<div class="news-content-wrap"><div class="content"><h2>');
-                  newsLink = $('<a>').attr('href', entry.link).text(entry.title);
-                  newsMeat.find('h2').append(newsLink);
+                  newsMeat.find('h2').text(entry.title);
                   newsImage = $(entry.content).find('img');
-                  newsItem.append(newsImage);
-                  newsItem.append(newsMeat);
+                  newsLink = $('<a>').attr('href', entry.link);
+                  newsLink.append(newsImage);
+                  newsLink.append(newsMeat);
+                  newsItem.append(newsLink);
                   carouselContainer.append(newsItem);
                 }
                 // carouselContainer.append('<div><div class="news-photo-pager"><a class="pager-item pager-item-1 news-photo-pager-current">1</a><a class="pager-item pager-item-2">2</a><a class="pager-item pager-item-3">3</a><a class="pager-item pager-item-4">4</a><a class="morelink" href="/news">More</a></div></div>');
