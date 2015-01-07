@@ -295,10 +295,7 @@
           return fetchNews();
         }
 
-        var script = document.createElement('script');
-        document.body.appendChild(script);
-        script.onload = fetchNews;
-        script.src = 'https://www.google.com/jsapi';
+        $.getScript('https://www.google.com/jsapi', fetchNews);
       };
     }());
 
