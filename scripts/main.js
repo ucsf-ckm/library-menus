@@ -300,6 +300,13 @@ Drupal.theme.prototype = {
   }
 };
 ;
+// see Redmine ticket #3215
+if (! window.location.search.match(/ovrrdr/)) {
+    if (window.screen.height < 600 && window.screen.width < 600) {
+        window.location = "http://m.ucsf.edu/library";
+    }
+}
+;
 
 /*
  * Superfish v1.4.8 - jQuery menu widget
