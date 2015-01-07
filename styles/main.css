@@ -3090,7 +3090,7 @@ ul.nice-menu li {
   color: #3083bd;
 }
 
-.ie8 .news-flash h2 {
+body.ie8 .news-flash h2 {
   margin-top -24px;
 }
 
