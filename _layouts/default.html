@@ -253,7 +253,7 @@
 
         var fetchNews = function () {
           var initialize = function () {
-            var feed = new google.feeds.Feed("https://blogs.library.ucsf.edu/newstest/feed/");
+            var feed = new google.feeds.Feed("https://news.library.ucsf.edu/feed/");
             feed.load(function(result) {
               if (!result.error) {
                 // Drupal legacy DOM disaster!
