@@ -269,7 +269,7 @@
                   newsItem = $("<div>").addClass("news-flash");
                   newsMeat = $('<div class="news-content-wrap"><div class="content"><h2>');
                   newsMeat.find('h2').text(entry.title);
-                  newsImage = $(entry.content).find('img');
+                  newsImage = $('img', '<div>' + entry.content + '</div>');
                   newsLink = $('<a>').attr('href', entry.link);
                   newsLink.append(newsImage);
                   newsLink.append(newsMeat);
