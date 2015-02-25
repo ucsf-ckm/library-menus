@@ -1,0 +1,85 @@
+progress {
+  width: 100%;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .top-bar .name h1 a {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 64.063em) {
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    padding-left: 9px;
+  }
+}
+
+/* iOS Safari zooms on search box focus without this */
+input[type="search"] {
+  font-size: 1rem;
+}
+
+.top-bar .has-dropdown > a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.search-bar {
+  background-color: #ad4200;
+  margin-bottom: 1em;
+}
+
+input.search-terms {
+  border-radius: .3em 0 0 .3em;
+}
+
+input.button.postfix
+{
+  border-radius: 0 .3em .3em 0;
+}
+
+div.extra-info {
+  height: 2em;
+  background-color: #2571a1;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+div.extra-info ul {
+  line-height: 2em;
+}
+
+div.extra-info ul li a {
+  color: #fff;
+}
+
+.extra-info .hours ul li:last-child a {
+  position:relative;
+  padding-left:1.5em;
+}
+
+.extra-info img {
+  max-height: 1.5em;
+  max-width: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+}
+
+.footer {
+  border-top: 1px #ccc solid;
+}
+
+/* adjust height and borders of menu dropdowns */
+.dropdown li:not(.has-form) a:not(.button) {
+  line-height: 40px;
+}
+
+.top-bar-section .dropdown {
+  border: 1px solid #DDDCDC;
+}
+
+.top-bar-section .divider, .top-bar-section [role="separator"] {
+  border-bottom: 1px solid #DDDCDC;
+  border-top: 1px solid transparent;
+}
