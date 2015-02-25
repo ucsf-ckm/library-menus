@@ -161,8 +161,8 @@
                 for (var i = 0; i < result.feed.entries.length; i++) {
                   entry = result.feed.entries[i];
                   newsItem = $('<div class="row">');
-                  newsLinkContainer = $('<div class="medium-8 columns">');
-                  newsMeatContainer = $('<div class="medium-4 columns">');
+                  newsLinkContainer = $('<div class="medium-9 columns">');
+                  newsMeatContainer = $('<div class="medium-3 columns">');
                   newsMeat = $('<span>');
                   newsMeat.text(entry.title);
                   imageSrc = $('img', '<div>' + entry.content + '</div>').attr('src');
@@ -184,9 +184,7 @@
                 container.append(carouselContainer);
 
                 carouselContainer.slick({
-                  autoplay: true,
-                  centerMode: true,
-                  variableWidth: true
+                  autoplay: true
                 });
               }
             });
