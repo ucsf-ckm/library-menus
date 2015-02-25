@@ -153,16 +153,16 @@
                 var entry;
                 var newsItem;
                 var newsMeat;
-                var newsMeatContainer;
+                var newsTextContainer;
                 var newsLink;
-                var newsLinkContainer;
+                var newsTextContainer;
                 var imageSrc;
                 var newsImage;
                 for (var i = 0; i < result.feed.entries.length; i++) {
                   entry = result.feed.entries[i];
                   newsItem = $('<div class="row">');
-                  newsLinkContainer = $('<div class="medium-9 columns">');
-                  newsMeatContainer = $('<div class="medium-3 columns">');
+                  newsImageContainer = $('<div class="medium-9 columns">');
+                  newsTextContainer = $('<div class="medium-3 columns">');
                   newsMeat = $('<span>');
                   newsMeat.text(entry.title);
                   imageSrc = $('img', '<div>' + entry.content + '</div>').attr('src');
@@ -173,10 +173,10 @@
                     .attr('alt', '');
                   newsLink = $('<a>').attr('href', entry.link);
                   newsLink.append(newsImage);
-                  newsLinkContainer.append(newsLink);
-                  newsMeatContainer.append(newsMeat);
-                  newsItem.append(newsLinkContainer);
-                  newsItem.append(newsMeatContainer);
+                  newsImageContainer.append(newsLink);
+                  newsTextContainer.append(newsMeat);
+                  newsItem.append(newsImageContainer);
+                  newsItem.append(newsTextContainer);
                   carouselContainer.append(newsItem);
                 }
 
