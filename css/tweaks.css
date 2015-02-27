@@ -83,3 +83,7 @@ div.extra-info ul li a {
   border-bottom: 1px solid #DDDCDC;
   border-top: 1px solid transparent;
 }
+
+.featured-classes h3 {
+  display:none;
+}
