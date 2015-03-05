@@ -88,6 +88,10 @@ div.extra-info ul li a {
   display:none;
 }
 
+#featured-guide {
+    padding-bottom: 15px;
+}
+
 .news-category {
   color: #fff;
   background-color: #ad4200;
