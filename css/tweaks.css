@@ -108,3 +108,6 @@ div.extra-info ul li a {
   list-style-position: inside;
   font-family: "Roboto Condensed", "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
 }
+.outline {
+  border: 1px solid #bbb;
+}
