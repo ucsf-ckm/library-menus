@@ -104,10 +104,31 @@ div.extra-info ul li a {
   display: block;
   margin: 0;
   padding: 0;
-  list-style-type: disc;
+  list-style-type: none;
   list-style-position: inside;
   font-family: "Roboto Condensed", "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
 }
+
+/*--make inline and apply class for arrow bullets on Popular Links--*/
+.side-nav li a:not(.button) {
+  display: inline;
+  color: #2571a1;
+  margin: 0;
+  padding: 0.4375rem 0.875rem;
+}
+
+.arrowbullet:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #ad4200;
+    font-size: 18px;
+    padding-right: 0px;
+}
+
 .outline {
   border: 1px solid #bbb;
 }
