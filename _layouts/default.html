@@ -166,8 +166,7 @@
                   newsImageContainer = $('<div class="medium-8 columns">');
                   newsTextContainer = $('<div class="medium-4 columns">');
 
-                  newsMeat = $('<div>');
-                  newsMeat.addClass('medium-text-left');
+                  newsMeat = $('<div class="medium-text-left news-text">');
                   newsMeat.text(entry.title);
                   imageSrc = $('img', '<div>' + entry.content + '</div>').attr('src');
                   newsImage = $('<img>')
@@ -202,7 +201,7 @@
 
                 carouselContainer.slick({
                   arrows: false,
-                  autoplay: false,
+                  autoplay: true,
                   dots: true,
                   fade: true,
                   speed: 3000
