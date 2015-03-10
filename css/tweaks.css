@@ -129,6 +129,10 @@ div.extra-info ul li a {
     padding-right: 0px;
 }
 
-.outline {
-  border: 1px solid #bbb;
+.panel {
+  background: white;
+}
+
+.news-category {
+  font-size: smaller;
 }
