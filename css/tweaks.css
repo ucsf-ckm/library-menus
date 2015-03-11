@@ -121,10 +121,6 @@ div.extra-info ul li a {
     padding-right: 0px;
 }
 
-.panel {
-  background: white;
-}
-
 .outline {
   border: solid 1px #ccc;
 }
@@ -140,6 +136,7 @@ div.extra-info ul li a {
 @media only screen and (min-width: 40.063em) {
   .news-text {
     height: 9rem;
+    padding-top: 15px;
   }
 }
 
