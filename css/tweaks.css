@@ -133,10 +133,18 @@ div.extra-info ul li a {
   margin-right: 1rem;
 }
 
+.news-text {
+  padding-top: 15px;
+}
+
 @media only screen and (min-width: 40.063em) {
   .news-text {
     height: 9rem;
-    padding-top: 15px;
+  }
+
+  .news-image {
+    width: 400px;
+    height: 225px;
   }
 }
 
