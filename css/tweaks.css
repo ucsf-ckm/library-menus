@@ -92,14 +92,6 @@ div.extra-info ul li a {
     padding-bottom: 15px;
 }
 
-.news-category {
-  color: #fff;
-  background-color: #ad4200;
-  padding: 5px 5px 5px 5px;
-  width: 100%;
-  margin: 0;
-}
-
 .side-nav {
   display: block;
   margin: 0;
@@ -133,10 +125,6 @@ div.extra-info ul li a {
   background: white;
 }
 
-.news-category {
-  font-size: smaller;
-}
-
 .outline {
   border: solid 1px #ccc;
 }
@@ -145,9 +133,21 @@ div.extra-info ul li a {
   padding: 0;
 }
 
+.news-more {
+  margin-right: 1rem;
+}
+
 @media only screen and (min-width: 40.063em) {
   .news-text {
-    height: 7rem;
+    height: 9rem;
   }
 }
 
+@media only screen and (max-width: 64.063em) {
+  .news-text {
+    height: 5rem;
+  }
+  .news-more .button {
+    margin-bottom: 0;
+  }
+}

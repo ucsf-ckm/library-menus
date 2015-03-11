@@ -159,12 +159,11 @@
                 var newsTextContainer;
                 var imageSrc;
                 var newsImage;
-                var category;
                 for (var i = 0; i < result.feed.entries.length; i++) {
                   entry = result.feed.entries[i];
                   newsItem = $('<div class="row collapse outline">');
-                  newsImageContainer = $('<div class="medium-8 columns">');
-                  newsTextContainer = $('<div class="medium-4 columns">');
+                  newsImageContainer = $('<div class="medium-7 columns">');
+                  newsTextContainer = $('<div class="medium-5 columns">');
 
                   newsMeat = $('<div class="medium-text-left news-text">');
                   newsMeat.text(entry.title);
@@ -176,14 +175,7 @@
                     .attr('alt', '');
                   newsImageContainer.append(newsImage);
                   newsTextContainer.append(newsMeat);
-                  newsTextContainer.append($('<p class="medium-text-right"><a href="#" class="button tiny radius">Learn More</a></p>'));
-
-                  category = $('<div>');
-                  category.addClass('news-category').addClass('medium-text-right');
-                  if (entry.categories instanceof Array) {
-                    category.text(entry.categories[0].replace('&amp;', '&'));
-                  }
-                  newsTextContainer.append(category);
+                  newsTextContainer.append($('<p class="medium-text-right news-more"><a href="#" class="button tiny radius">Learn More</a></p>'));
 
                   newsLink = $('<a>').attr('href', entry.link);
 
@@ -201,7 +193,7 @@
 
                 carouselContainer.slick({
                   arrows: false,
-                  autoplay: false,
+                  autoplay: true,
                   dots: true,
                   fade: true,
                   speed: 3000
