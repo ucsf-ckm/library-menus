@@ -141,6 +141,7 @@ div.extra-info ul li a {
   .news-text {
     height: 9rem;
     padding-top: 15px;
+    padding-left: 10px;
   }
 }
 
