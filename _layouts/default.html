@@ -170,8 +170,8 @@
                   imageSrc = $('img', '<div>' + entry.content + '</div>').attr('src');
                   newsImage = $('<img class="news-image">')
                     .attr('src', imageSrc)
-                    .attr('width', 400)
-                    .attr('height', 225)
+                    .attr('width', 480)
+                    .attr('height', 270)
                     .attr('alt', '');
                   newsImageContainer.append(newsImage);
                   newsTextContainer.append(newsMeat);
@@ -193,7 +193,7 @@
 
                 carouselContainer.slick({
                   arrows: false,
-                  autoplay: false,
+                  autoplay: true,
                   dots: true,
                   fade: true,
                   speed: 3000
