@@ -162,7 +162,7 @@
                 var category;
                 for (var i = 0; i < result.feed.entries.length; i++) {
                   entry = result.feed.entries[i];
-                  newsItem = $('<div class="row collapse">');
+                  newsItem = $('<div class="row collapse outline">');
                   newsImageContainer = $('<div class="medium-8 columns">');
                   newsTextContainer = $('<div class="medium-4 columns">');
 
@@ -201,7 +201,7 @@
 
                 carouselContainer.slick({
                   arrows: false,
-                  autoplay: true,
+                  autoplay: false,
                   dots: true,
                   fade: true,
                   speed: 3000

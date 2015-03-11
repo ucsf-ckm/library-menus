@@ -137,6 +137,14 @@ div.extra-info ul li a {
   font-size: smaller;
 }
 
+.outline {
+  border: solid 1px #ccc;
+}
+
+.outline .columns {
+  padding: 0;
+}
+
 @media only screen and (min-width: 40.063em) {
   .news-text {
     height: 7rem;
