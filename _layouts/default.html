@@ -159,20 +159,13 @@
                 var newsTextContainer;
                 var imageSrc;
                 var newsImage;
-                var category;
                 for (var i = 0; i < result.feed.entries.length; i++) {
                   entry = result.feed.entries[i];
-                  newsItem = $('<div class="row">');
-                  newsImageContainer = $('<div class="medium-8 columns">');
-                  newsTextContainer = $('<div class="medium-4 columns">');
+                  newsItem = $('<div class="row collapse outline">');
+                  newsImageContainer = $('<div class="small-7 columns">');
+                  newsTextContainer = $('<div class="small-5 columns">');
 
-
-         // <p class="medium-text-right"><a href="#" class="button tiny">Learn More</a></p>
-         // <h6 class="category medium-text-right">Databases</h6>
-
-
-                  newsMeat = $('<div>');
-                  newsMeat.addClass('medium-text-left');
+                  newsMeat = $('<div class="small-text-left news-text">');
                   newsMeat.text(entry.title);
                   imageSrc = $('img', '<div>' + entry.content + '</div>').attr('src');
                   newsImage = $('<img>')
@@ -182,14 +175,7 @@
                     .attr('alt', '');
                   newsImageContainer.append(newsImage);
                   newsTextContainer.append(newsMeat);
-                  newsTextContainer.append($('<p class="medium-text-right"><a href="#" class="button tiny radius">Learn More</a></p>'));
-
-                  category = $('<div>');
-                  category.addClass('news-category').addClass('medium-text-right');
-                  if (entry.categories instanceof Array) {
-                    category.text(entry.categories[0].replace('&amp;', '&'));
-                  }
-                  newsTextContainer.append(category);
+                  newsTextContainer.append($('<p class="small-text-right news-more"><a href="#" class="button tiny radius">Learn More</a></p>'));
 
                   newsLink = $('<a>').attr('href', entry.link);
 
@@ -207,7 +193,7 @@
 
                 carouselContainer.slick({
                   arrows: false,
-                  autoplay: false,
+                  autoplay: true,
                   dots: true,
                   fade: true,
                   speed: 3000
