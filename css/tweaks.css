@@ -140,6 +140,7 @@ div.extra-info ul li a {
 @media only screen and (min-width: 40.063em) {
   .news-text {
     height: 9rem;
+    padding-top: 15px;
   }
 }
 
