@@ -152,3 +152,7 @@ div.extra-info ul li a {
     margin-bottom: 0;
   }
 }
+/* hide details for items pulled from library calendar */
+.s-lc-ea-date {
+display: none;
+}
