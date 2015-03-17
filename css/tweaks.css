@@ -164,3 +164,28 @@ display: none;
   box-shadow:         3px 3px 4px #999;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
+.with-pinned-button {
+  padding-bottom: 3em;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 1em;
+}
+
+.bottom.text-center {
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom .button {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.last-image {
+  padding-bottom: 1.25em;
+}
