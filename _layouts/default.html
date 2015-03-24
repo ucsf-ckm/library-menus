@@ -310,7 +310,14 @@
     ga('send', 'pageview', {
       'page': location.pathname + location.search  + location.hash
     });
+
+    // Now for the roll-up report that generates data that is useful to no one.
+    ga('create', 'UA-552286-29', {'name':'b'});
+    ga('b.send', 'pageview', {
+      'page': location.pathname + location.search  + location.hash
+    });
   </script>
+
   <script type="text/javascript">
     setTimeout(function(){var a=document.createElement("script");
     var b=document.getElementsByTagName("script")[0];
