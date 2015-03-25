@@ -140,26 +140,25 @@
     <script src="/slick/slick.min.js"></script>
     <script>
       $(document).ready( function () {
-        var container = $('#news');
-        if (container.length === 0) {
+         var carouselContainer = $('#news-carousel');
+
+        if (carouselContainer.length === 0) {
           return;
         }
+
+        carouselContainer.slick({
+          arrows: false,
+          autoplay: true,
+          dots: true,
+          fade: true,
+          speed: 3000
+        });
 
         var fetchNews = function () {
           var initialize = function () {
             var feed = new google.feeds.Feed("https://news.library.ucsf.edu/feed/");
             feed.load(function(result) {
               if (!result.error) {
-                var carouselContainer = $('#news-carousel');
-
-                carouselContainer.slick({
-                  arrows: false,
-                  autoplay: true,
-                  dots: true,
-                  fade: true,
-                  speed: 3000
-                });
-                
                 var entry;
                 var imageSrc;
                 var l = result.feed.entries.length > 4 ? 4 : result.feed.entries.length;
@@ -176,8 +175,6 @@
                   $('#newsLink_' + i)
                     .attr('href', entry.link);
                 }
-
-                container.append(carouselContainer);
               }
             });
           };
