@@ -129,6 +129,11 @@ div.extra-info ul li a {
   padding: 0;
 }
 
+/* slick-dots are not centered because it inherits a margin-left from Foundation ul selector. Reset it. */
+.slick-dots {
+  margin-left: 0;
+}
+
 .news-more {
   margin-right: 1rem;
 }
