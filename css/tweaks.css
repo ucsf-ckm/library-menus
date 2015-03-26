@@ -140,8 +140,7 @@ div.extra-info ul li a {
 
 .news-text {
   padding-top: 15px;
-  padding-left: 10px;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -194,3 +193,14 @@ display: none;
 .last-image {
   padding-bottom: 1.25em;
 }
+
+/* centered now, so change class name in main CSS? */
+.small-text-left {
+text-align: center !important;
+}
+
+/* centered now, so change class name in main CSS? */
+.small-text-right {
+text-align: center !important;
+}
+
