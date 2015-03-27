@@ -193,14 +193,3 @@ display: none;
 .last-image {
   padding-bottom: 1.25em;
 }
-
-/* centered now, so change class name in main CSS? */
-.small-text-left {
-text-align: center !important;
-}
-
-/* centered now, so change class name in main CSS? */
-.small-text-right {
-text-align: center !important;
-}
-
