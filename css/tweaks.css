@@ -127,6 +127,7 @@ div.extra-info ul li a {
 
 .outline .columns {
   padding: 0;
+  margin-bottom: -7px;
 }
 
 /* slick-dots are not centered because it inherits a margin-left from Foundation ul selector. Reset it. */
