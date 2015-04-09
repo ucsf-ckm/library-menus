@@ -135,6 +135,10 @@ div.extra-info ul li a {
   margin-left: 0;
 }
 
+.news-image {
+  margin: auto;
+}
+
 .news-text {
   padding: 15px;
   font-size: 1.25rem;
