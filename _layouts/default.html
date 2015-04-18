@@ -5,11 +5,16 @@
   <meta charset="utf-8" />
   <title>UCSF Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/app.css" />
+{% assign relative-baseurl = "" %}
+{% assign canon = page.url | append: "page.html" | split: "/" %}
+{% for item in canon offset:2 %}
+  {% assign relative-baseurl = relative-baseurl | append:"../" %}
+{% endfor %}
+  <link rel="stylesheet" href="{{ relative-baseurl }}css/app.css" />
   <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
-  <link rel="stylesheet" href="css/tweaks.css" />
+  <link rel="stylesheet" href="{{ relative-baseurl }}css/tweaks.css" />
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <script src="js/vendor/modernizr.js"></script>
+  <script src="{{ relative-baseurl }}js/vendor/modernizr.js"></script>
 </head>
 
 <body>
@@ -127,8 +132,8 @@
     </div>
   </div> 
 
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/foundation.min.js"></script>
+  <script src="{{ relative-baseurl }}js/vendor/jquery.js"></script>
+  <script src="{{ relative-baseurl }}js/foundation.min.js"></script>
 
   <script>
     $(document).foundation();

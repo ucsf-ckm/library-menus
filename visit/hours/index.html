@@ -1,0 +1,137 @@
+---
+layout: default
+---
+
+<style>
+  body {
+    font-family: arial;
+  }
+
+  table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+  }
+
+  table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  table td:first-child {
+      border-bottom: 0;
+       font-weight: bold;
+    }
+
+  @media screen and (max-width: 600px) {
+
+    table {
+      border: 0;
+    }
+
+    table thead {
+      display: none;
+    }
+
+    table tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+      display: block;
+      text-align: right;
+      font-size: 13px;
+      border-bottom: 1px dotted #ccc;
+    }
+    
+    table td:first-child {
+      border-bottom: 0;
+      font-weight: bold;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+
+    table td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: none;
+      font-weight: bold;
+    }
+  }
+  @media screen and (max-width: 600px) {
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: none;
+    font-weight: bold;
+  }
+}
+</style>
+
+<div class="row">
+  <div class="large-12 columns">
+    <table>
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tues</th>
+          <th>Wed</th>
+          <th>Thurs</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Location">Parnassus Library</td>
+          <td data-label="Sun">12pm – 10pm</td>
+          <td data-label="Mon">7:45am – 10pm</td>
+          <td data-label="Tues">7:45am – 10pm</td>
+          <td data-label="Wed">7:45am – 10pm</td>
+          <td data-label="Thurs">7:45am – 10pm</td>
+          <td data-label="Fri">7:45am – 8pm</td>
+          <td data-label="Sat">10am – 6pm</td>
+        </tr>
+        <tr>
+          <td data-label="Location">Mission Bay Library</td>
+          <td data-label="Sun">closed</td>
+          <td data-label="Mon">9am – 9pm</td>
+          <td data-label="Tues">9am – 9pm</td>
+          <td data-label="Wed">9am – 9pm</td>
+          <td data-label="Thurs">9am – 9pm</td>
+          <td data-label="Fri">9am – 5:30pm</td>
+          <td data-label="Sat">10am – 6pm</td>
+        </tr>
+        <tr>
+          <td data-label="Location">Mission Bay Hub</td>
+          <td data-label="Sun">24 Hours</td>
+          <td data-label="Mon">24 Hours</td>
+          <td data-label="Tues">24 Hours</td>
+          <td data-label="Wed">24 Hours</td>
+          <td data-label="Thurs">24 Hours</td>
+          <td data-label="Fri">24 Hours</td>
+          <td data-label="Sat">24 Hours</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
