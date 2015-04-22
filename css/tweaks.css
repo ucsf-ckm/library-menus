@@ -204,3 +204,72 @@ display: none;
 .last-image {
   padding-bottom: 1.25em;
 }
+
+table.responsive {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 5px 0px 15px 0px;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  table.responsive tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+
+  table.responsive th, table.responsive td {
+    padding: 10px;
+    text-align: center;
+  }
+
+  table.responsive th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  table.responsive td:first-child {
+    border-bottom: 0;
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 40em) {
+
+    table.responsive {
+      border: 0;
+    }
+
+    table.responsive thead {
+      display: none;
+    }
+
+    table.responsive tr {
+      margin-bottom: 10px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+    }
+
+    table.responsive td {
+      display: block;
+      text-align: right;
+      font-size: 13px;
+      border-bottom: 1px dotted #ccc;
+    }
+    
+    table.responsive td:first-child {
+      border-bottom: 0;
+      font-weight: bold;
+    }
+
+    table.responsive td:last-child {
+      border-bottom: 0;
+    }
+
+    table.responsive td:before {
+      content: attr(data-label);
+      float: left;
+      text-transform: none;
+      font-weight: bold;
+    }
+  }
