@@ -1,3 +1,13 @@
+h2 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: #ad4200;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
 progress {
   width: 100%;
 }
