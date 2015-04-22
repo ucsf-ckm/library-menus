@@ -140,6 +140,11 @@ div.extra-info ul li a {
   margin-bottom: -6.6px;
 }
 
+.library-hours-date:after {
+  content: "\A";
+  white-space: pre;
+}
+
 /* slick-dots are not centered because it inherits a margin-left from Foundation ul selector. Reset it. */
 .slick-dots {
   margin-left: 0;

@@ -203,10 +203,14 @@
         };
 
         var success = function (result) {
+          var sanitizeHours = function (text) {
+            return text.replace(/[^\w\s:-]/,'');
+          };
+
           var prependHours = function (id, label, className, url) {
             var hours = locations[id];
             if (hours) {
-              var hoursText = hours[0].text.replace(/[^\w\s:-]/,'');
+              var hoursText = sanitizeHours(hours[0].text);
               var a = $('<a>').attr('href', url).append(label + ': ' + hoursText);
               var li = $('<li>').append(a);
               li.addClass(className);
@@ -214,12 +218,37 @@
             }
           };
 
+          var renderTableHeader = function (selector, data, property) {
+            $(selector)
+            .each(function (index) {
+              $(this).text(sanitizeHours(data[index][property]));
+            });
+          };
+
+          var renderTableBody = function (selector, data) {
+            $(selector)
+            .each(function (index) {
+              $(this).attr('data-label', sanitizeHours(data[index].day));
+              $(this).text(sanitizeHours(data[index].text));
+            });
+          }
+
           var locations = result.locations;
           if (locations) {
+            // We always do the header...
             prependHours('missionBayHub', 'MB Hub', 'show-for-large-up', 'http://www.library.ucsf.edu/visit/missionhall');
             prependHours('missionBay', 'MB Library', 'show-for-large-up', 'http://www.library.ucsf.edu/visit/missionbay');
             prependHours('parnassus', 'Parnassus', 'show-for-medium-up', 'http://www.library.ucsf.edu/visit/parnassus');
             $('#header-hours ul').prepend('<li class="show-for-medium-up"><a href="http://www.library.ucsf.edu/visit/hours">Today:</a></li>');
+            // ...now check to see if we need to do the main body as well.
+            if(locations.parnassus && !!$('#library-hours').length) {
+              renderTableHeader('.library-hours-date', locations.parnassus, 'date');
+              renderTableHeader('.library-hours-day', locations.parnassus, 'day');
+
+              renderTableBody('.library-hours-parnassus', locations.parnassus);
+              renderTableBody('.library-hours-missionBay', locations.missionBay);
+              renderTableBody('.library-hours-missionBayHub', locations.missionBayHub);
+            }
           }
         };
 
